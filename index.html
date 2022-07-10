@@ -17,7 +17,7 @@
 <body class="h-100">
        <div class="container border border-2 h-100">
             <div class="row pt-3">
-                <div class="col d-flex justify-content-end">
+                <div class="col d-flex justify-content-end d-print-none">
                      <button onclick="printInvoice('invoice')" class="btn btn-dark justify-content-center">Print This Invoice</button>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                         <div class="col">
                             <div>
                              <strong>Invoice To:</strong><br>
-                            <address>
+                            <address class="address">
                              Mark Davis <br>
                              3333 Al Davis Way <br>
                              Las Vegas, NV 89118
@@ -56,9 +56,9 @@
                         <div class="col d-flex justify-content-end">
                             <div>
                              <strong>Pay To:</strong> <br>
-                             <address>
+                             <address class="address">
                              Ken Codes <br>
-                             2705 N. People St <br>
+                             3690 N. People St <br>
                              Spokane, WA 99205 <br>
                             </address>
                             </div>
@@ -74,7 +74,7 @@
                                             <th>Description</th>
                                             <th>Rate</th>
                                             <th>QTY</th>
-                                            <th>Amount</th>
+                                            <th class="text-end">Amount</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -83,45 +83,51 @@
                                             <td>Website Design</td>
                                             <td>$60.00</td>
                                             <td>10</td>
-                                            <td>$600.00</td>
+                                            <td class="text-end">$600.00</td>
                                         </tr>
                                         <tr>
                                             <td>Development</td>
                                             <td>Website Development</td>
                                             <td>$150.00</td>
                                             <td>10</td>
-                                            <td>$1500.00</td>
+                                            <td class="text-end">$1500.00</td>
                                         </tr>
                                         <tr>
                                             <td>Deployment</td>
                                             <td>Deployment and Hosting</td>
                                             <td>$450.00</td>
                                             <td>1</td>
-                                            <td>$450.00</td>
+                                            <td class="text-end">$450.00</td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
                                         <tr>
                                             <td colspan="4">Sub Total:</td>
-                                            <td>$2550.00</td>
+                                            <td class="text-end">$2550.00</td>
                                         </tr>
                                         <tr>
                                             <td colspan="4">Tax:</td>
-                                            <td>$0.00</td>
+                                            <td class="text-end">$0.00</td>
                                         </tr>
                                         <tr>
                                             <td colspan="4">Total:</td>
-                                            <td>$2550.00</td>
+                                            <td class="text-end">$2550.00</td>
                                         </tr>
                                     </tfoot>
                             </table>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <div><p><strong>Note:</strong>&#160;This is a computer generated receipt and does not require a physical signature.</p></div>
+                    <footer>
+                        <div class="row">
+                            <div class="col">
+                                <div>
+                                    <p>
+                                         <strong>Note:</strong>&#160;This is a computer generated receipt and does not require a physical signature.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                     </div>
+                    </footer>
             </div>
         </div>
 
